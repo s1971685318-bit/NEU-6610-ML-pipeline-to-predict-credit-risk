@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credit Risk Module 8</title>
+<style>
+  body { max-width: 44rem; margin: 3rem auto; padding: 0 1rem; font: 1rem/1.5 system-ui; }
+  textarea { display: block; box-sizing: border-box; width: 100%; margin: .5rem 0 1rem; }
+  button { padding: .5rem 1rem; }
+</style>
+<h1>Credit Card Default Prediction</h1>
+<p>Module 8 tuned logistic regression. Use the fictional example or paste one
+account with all 23 original UCI predictor columns. The cutoff is 0.50.</p>
+<label for="csv">CSV header and one account</label>
+<textarea id="csv" rows="5" spellcheck="false"></textarea>
+<button id="example">Load example</button>
+<button id="predict">Predict</button>
+<p id="result" role="status"></p>
+<script type="module" src="./predict.mjs"></script>
+</html>
